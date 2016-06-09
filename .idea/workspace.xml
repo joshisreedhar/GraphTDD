@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4551c4df-a5f8-4cba-844a-1ffe4baee1bd" name="Default" comment="" />
+    <list default="true" id="4551c4df-a5f8-4cba-844a-1ffe4baee1bd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/GraphTDD/com/TW/AndroidTDD/NodeTest.class" afterPath="$PROJECT_DIR$/out/test/GraphTDD/com/TW/AndroidTDD/NodeTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/TW/AndroidTDD/NodeTest.java" afterPath="$PROJECT_DIR$/test/com/TW/AndroidTDD/NodeTest.java" />
+    </list>
     <ignored path="GraphTDD.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,7 +58,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1465457321000" expanded="true" signature="69873:69985" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,14 +68,13 @@
       <file leaf-file-name="NodeTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/TW/AndroidTDD/NodeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0351967">
-              <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.48033127">
+              <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
               <folding>
                 <element signature="method#aNodeIsConnectedToSelf#0;class#NodeTest#0" expanded="false" />
                 <element signature="method#aNodeIsNotConnectedByDefault#0;class#NodeTest#0" expanded="false" />
                 <element signature="method#aNodeShouldBeAbleToConnectToAnother#0;class#NodeTest#0" expanded="false" />
                 <element signature="method#aNodeShouldBeAbleToConnectToMoreThanOneNode#0;class#NodeTest#0" expanded="false" />
-                <element signature="method#aChildsChildNodeIsAlsoItsChildNode#0;class#NodeTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -121,8 +127,6 @@
               <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
               <folding>
                 <element signature="method#equals#0;class#Node#0" expanded="false" />
-                <element signature="e#832#833#0" expanded="false" />
-                <element signature="e#878#879#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -147,6 +151,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -204,6 +211,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -278,8 +287,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Tests" />
       </pane>
@@ -311,7 +318,7 @@
       <recent name="com.TW.AndroidTDD" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NodeTest">
+  <component name="RunManager" selected="JUnit.NodeTest.aMultiLevelNodeGraph">
     <configuration default="false" name="NodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -326,32 +333,6 @@
       <option name="MAIN_CLASS_NAME" value="com.TW.AndroidTDD.NodeTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="NodeTest.aNodeIsNotConnectedByDefault" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.TW.AndroidTDD.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="GraphTDD" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.TW.AndroidTDD" />
-      <option name="MAIN_CLASS_NAME" value="com.TW.AndroidTDD.NodeTest" />
-      <option name="METHOD_NAME" value="aNodeIsNotConnectedByDefault" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -429,6 +410,32 @@
       <option name="PACKAGE_NAME" value="com.TW.AndroidTDD" />
       <option name="MAIN_CLASS_NAME" value="com.TW.AndroidTDD.NodeTest" />
       <option name="METHOD_NAME" value="aChildsChildNodeIsAlsoItsChildNode" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="NodeTest.aMultiLevelNodeGraph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.TW.AndroidTDD.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GraphTDD" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.TW.AndroidTDD" />
+      <option name="MAIN_CLASS_NAME" value="com.TW.AndroidTDD.NodeTest" />
+      <option name="METHOD_NAME" value="aMultiLevelNodeGraph" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -918,18 +925,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.NodeTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.NodeTest.aNodeIsNotConnectedByDefault" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.NodeTest.aNodeShouldBeAbleToConnectToAnother" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.NodeTest.aNodeShouldBeAbleToConnectToMoreThanOneNode" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.NodeTest.aChildsChildNodeIsAlsoItsChildNode" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.NodeTest.aNodeShouldBeAbleToConnectToAnother" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.NodeTest.aNodeShouldBeAbleToConnectToMoreThanOneNode" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.NodeTest.aChildsChildNodeIsAlsoItsChildNode" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.NodeTest.aMultiLevelNodeGraph" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.NodeTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.NodeTest.aChildsChildNodeIsAlsoItsChildNode" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.NodeTest.aNodeShouldBeAbleToConnectToMoreThanOneNode" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.NodeTest.aNodeShouldBeAbleToConnectToAnother" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.NodeTest.aNodeIsNotConnectedByDefault" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.NodeTest.aMultiLevelNodeGraph" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.NodeTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.NodeTest.aChildsChildNodeIsAlsoItsChildNode" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.NodeTest.aNodeShouldBeAbleToConnectToMoreThanOneNode" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.NodeTest.aNodeShouldBeAbleToConnectToAnother" />
       </list>
     </recent_temporary>
   </component>
@@ -942,13 +949,11 @@
       <updated>1465448478096</updated>
       <workItem from="1465448480718" duration="7703000" />
       <workItem from="1465456261788" duration="118000" />
+      <workItem from="1465457140470" duration="183000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NodeTest - 2016.06.09 at 12h 24m 35s.xml">
-      <configuration name="NodeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NodeTest - 2016.06.09 at 12h 25m 13s.xml">
       <configuration name="NodeTest" configurationId="JUnit" />
     </history-entry>
@@ -976,9 +981,12 @@
     <history-entry file="NodeTest_aChildsChildNodeIsAlsoItsChildNode - 2016.06.09 at 12h 23m 26s.xml">
       <configuration name="NodeTest.aChildsChildNodeIsAlsoItsChildNode" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="NodeTest_aMultiLevelNodeGraph - 2016.06.09 at 12h 58m 33s.xml">
+      <configuration name="NodeTest.aMultiLevelNodeGraph" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7821000" />
+    <option name="totallyTimeSpent" value="8004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="6" />
@@ -1053,7 +1061,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1465457321000" expanded="true" signature="69873:69985" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1066,7 +1076,6 @@
             <element signature="method#aNodeIsNotConnectedByDefault#0;class#NodeTest#0" expanded="false" />
             <element signature="method#aNodeShouldBeAbleToConnectToAnother#0;class#NodeTest#0" expanded="false" />
             <element signature="method#aNodeShouldBeAbleToConnectToMoreThanOneNode#0;class#NodeTest#0" expanded="false" />
-            <element signature="method#aChildsChildNodeIsAlsoItsChildNode#0;class#NodeTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1109,8 +1118,95 @@
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding>
             <element signature="method#equals#0;class#Node#0" expanded="false" />
-            <element signature="e#832#833#0" expanded="false" />
-            <element signature="e#878#879#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphTDD.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/TW/AndroidTDD/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1465457321000" expanded="true" signature="69873:69985" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/TW/AndroidTDD/NodeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#aNodeIsConnectedToSelf#0;class#NodeTest#0" expanded="false" />
+            <element signature="method#aNodeIsNotConnectedByDefault#0;class#NodeTest#0" expanded="false" />
+            <element signature="method#aNodeShouldBeAbleToConnectToAnother#0;class#NodeTest#0" expanded="false" />
+            <element signature="method#aNodeShouldBeAbleToConnectToMoreThanOneNode#0;class#NodeTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.0/junit-4.0.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/lang/AssertionError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.0/junit-4.0.jar!/org/junit/internal/runners/TestMethodRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.0/junit-4.0.jar!/org/junit/runner/notification/RunNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/TW/AndroidTDD/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="method#equals#0;class#Node#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1175,7 +1271,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1465457321000" expanded="true" signature="69873:69985" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1201,22 +1299,19 @@
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding>
             <element signature="method#equals#0;class#Node#0" expanded="false" />
-            <element signature="e#832#833#0" expanded="false" />
-            <element signature="e#878#879#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/TW/AndroidTDD/NodeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0351967">
-          <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.48033127">
+          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
           <folding>
             <element signature="method#aNodeIsConnectedToSelf#0;class#NodeTest#0" expanded="false" />
             <element signature="method#aNodeIsNotConnectedByDefault#0;class#NodeTest#0" expanded="false" />
             <element signature="method#aNodeShouldBeAbleToConnectToAnother#0;class#NodeTest#0" expanded="false" />
             <element signature="method#aNodeShouldBeAbleToConnectToMoreThanOneNode#0;class#NodeTest#0" expanded="false" />
-            <element signature="method#aChildsChildNodeIsAlsoItsChildNode#0;class#NodeTest#0" expanded="false" />
           </folding>
         </state>
       </provider>

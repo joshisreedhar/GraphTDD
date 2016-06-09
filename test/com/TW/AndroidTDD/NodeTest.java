@@ -68,4 +68,33 @@ public class NodeTest {
         assertEquals(isAConnectedToC,true);
         assertEquals(isDConnectedToC,false);
     }
+
+    @Test
+    public void aMultiLevelNodeGraph() {
+        Node nodeA = new Node("A");
+        Node nodeB = new Node("B");
+        Node nodeC = new Node("C");
+        Node nodeD = new Node("D");
+        Node nodeE = new Node("E");
+        Node nodeF = new Node("F");
+
+        nodeA.connectTo(nodeB);
+        nodeB.connectTo(nodeD);
+        nodeD.connectTo(nodeF);
+
+        nodeA.connectTo(nodeC);
+        nodeC.connectTo(nodeE);
+
+        boolean isAConnectedToD = nodeA.isConnected(nodeD);
+        boolean isAConnectedToF = nodeA.isConnected(nodeF);
+
+        boolean isAConnectedToE = nodeA.isConnected(nodeE);
+
+        boolean isEConnectedToF = nodeE.isConnected(nodeF);
+
+        assertEquals(isAConnectedToD,true);
+        assertEquals(isAConnectedToF,true);
+        assertEquals(isAConnectedToE,true);
+        assertEquals(isEConnectedToF,false);
+    }
 }
