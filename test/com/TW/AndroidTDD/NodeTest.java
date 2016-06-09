@@ -2,6 +2,9 @@ package com.TW.AndroidTDD;
 
 
 import org.junit.Test;
+import org.junit.experimental.categories.ExcludeCategories;
+
+import javax.naming.OperationNotSupportedException;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -29,7 +32,11 @@ public class NodeTest {
         Node nodeA = new Node("A");
         Node nodeB = new Node("B");
 
-        nodeA.connectTo(nodeB);
+        try {
+            nodeA.connectTo(nodeB);
+        } catch (Exception e) {
+
+        }
 
         boolean isConnected = nodeA.isConnected(nodeB);
         assertEquals(true, isConnected);
@@ -41,8 +48,12 @@ public class NodeTest {
         Node nodeB = new Node("B");
         Node nodeC = new Node("C");
 
-        nodeA.connectTo(nodeB);
-        nodeA.connectTo(nodeC);
+        try {
+            nodeA.connectTo(nodeB);
+            nodeA.connectTo(nodeC);
+        } catch (Exception e) {
+
+        }
 
         boolean isAConnectedToB = nodeA.isConnected(nodeB);
         boolean isAConnectedToC = nodeA.isConnected(nodeC);
@@ -58,15 +69,18 @@ public class NodeTest {
         Node nodeC = new Node("C");
         Node nodeD = new Node("D");
 
-        nodeA.connectTo(nodeB);
-        nodeB.connectTo(nodeC);
-        nodeA.connectTo(nodeD);
+        try {
+            nodeA.connectTo(nodeB);
+            nodeB.connectTo(nodeC);
+            nodeA.connectTo(nodeD);
+        } catch (Exception e) {
 
+        }
         boolean isAConnectedToC = nodeA.isConnected(nodeC);
         boolean isDConnectedToC = nodeD.isConnected(nodeC);
 
-        assertEquals(isAConnectedToC,true);
-        assertEquals(isDConnectedToC,false);
+        assertEquals(isAConnectedToC, true);
+        assertEquals(isDConnectedToC, false);
     }
 
     @Test
@@ -78,13 +92,16 @@ public class NodeTest {
         Node nodeE = new Node("E");
         Node nodeF = new Node("F");
 
-        nodeA.connectTo(nodeB);
-        nodeB.connectTo(nodeD);
-        nodeD.connectTo(nodeF);
+        try {
+            nodeA.connectTo(nodeB);
+            nodeB.connectTo(nodeD);
+            nodeD.connectTo(nodeF);
 
-        nodeA.connectTo(nodeC);
-        nodeC.connectTo(nodeE);
+            nodeA.connectTo(nodeC);
+            nodeC.connectTo(nodeE);
+        } catch (Exception e) {
 
+        }
         boolean isAConnectedToD = nodeA.isConnected(nodeD);
         boolean isAConnectedToF = nodeA.isConnected(nodeF);
 
@@ -92,9 +109,21 @@ public class NodeTest {
 
         boolean isEConnectedToF = nodeE.isConnected(nodeF);
 
-        assertEquals(isAConnectedToD,true);
-        assertEquals(isAConnectedToF,true);
-        assertEquals(isAConnectedToE,true);
-        assertEquals(isEConnectedToF,false);
+        assertEquals(isAConnectedToD, true);
+        assertEquals(isAConnectedToF, true);
+        assertEquals(isAConnectedToE, true);
+        assertEquals(isEConnectedToF, false);
     }
+
+    @Test(expected = OperationNotSupportedException.class)
+    public void aChildAdditionShouldNotAllowCircularDependency() throws OperationNotSupportedException {
+        Node nodeA = new Node("A");
+        Node nodeB = new Node("B");
+        Node nodeC = new Node("C");
+        nodeA.connectTo(nodeB);
+        nodeB.connectTo(nodeC);
+        nodeC.connectTo(nodeA);
+    }
+
+
 }

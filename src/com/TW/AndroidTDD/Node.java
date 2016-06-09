@@ -1,5 +1,6 @@
 package com.TW.AndroidTDD;
 
+import javax.naming.OperationNotSupportedException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +33,10 @@ public class Node {
         return ((Node) obj).name == this.name;
     }
 
-    public void connectTo(Node childNode) {
+    public void connectTo(Node childNode) throws OperationNotSupportedException {
+        if(childNode.isConnected(this)){
+            throw new OperationNotSupportedException("Will add cyclic reference");
+        }
         this.childNodes.add(childNode);
     }
 }
